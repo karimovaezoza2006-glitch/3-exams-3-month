@@ -7,37 +7,241 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="src/input.css">
+    <!-- AOS animation  -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- 1-Header section start -->
     <!-- 1-Header section end -->
 
     <!-- 2-Showcase section start -->
+<section class="container1 py-10">
+  <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1200">
+    <div class="swiper-wrapper">
+
+      <!-- SLIDE 1 -->
+      <div class="swiper-slide">
+        <div class="relative w-full h-[350px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden flex">
+          
+          <!-- Orqa fon rasmi -->
+          <img src="./images/wrapper1.svg" alt="slide1"
+               class="absolute inset-0 w-full h-full object-cover">
+
+          <!-- Gradient overlay chap tomonda -->
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-transparent"></div>
+
+          <!-- Kontent -->
+          <div class="relative z-10 flex w-full h-full items-center justify-between p-6 sm:p-10 md:p-14">
+
+            <!-- Chapdagi matn -->
+            <div class="max-w-xl text-white">
+              <h2 class="font-black text-xl sm:text-2xl md:text-4xl leading-[1.3] mb-3">
+                30 декабря в ЦАО "Евразия" состоится тестовое открытие 2 склона.
+              </h2>
+              <p class="font-normal text-sm sm:text-base md:text-lg leading-[1.5]">
+                К новогодним праздникам уже подготовлено 5 больших склонов и учебная трасса, 
+                а также тюбинговая горка.
+              </p>
+            </div>
+
+            <!-- O‘ngdagi jadvalcha -->
+            <div class="hidden sm:flex flex-col gap-4 bg-white/95 text-gray-800 rounded-xl shadow-lg p-6 w-[220px]">
+              <div class="flex items-center gap-2">
+                <img src="./icons/camera.svg" class="w-5 h-5" alt="">
+                <span class="text-sm font-medium">Веб-камеры</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./icons/lift.svg" class="w-5 h-5" alt="">
+                <span class="text-sm font-medium">Канатные дороги</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./icons/ticket.svg" class="w-5 h-5" alt="">
+                <span class="text-sm font-medium">Билеты</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./icons/map.svg" class="w-5 h-5" alt="">
+                <span class="text-sm font-medium">Карта</span>
+              </div>
+              <div class="border-t pt-3 text-xs text-gray-500">
+                Сегодня, Sunday 15 января
+              </div>
+              <div class="flex items-center gap-2 text-blue-600 font-semibold">
+                <img src="./icons/sun.svg" class="w-5 h-5" alt="">
+                <span>-10°</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="swiper-slide">
+        <div class="relative w-full h-[350px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden flex">
+          <img src="./images/snow2.jpg" alt="slide2"
+               class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-800/85 to-transparent"></div>
+
+          <div class="relative z-10 flex w-full h-full items-center justify-between p-6 sm:p-10 md:p-14">
+            <div class="max-w-xl text-white">
+              <h2 class="font-black text-xl sm:text-2xl md:text-4xl leading-[1.3] mb-3">
+                Всероссийские соревнования по сноуборду
+              </h2>
+              <p class="font-normal text-sm sm:text-base md:text-lg leading-[1.5]">
+                Спортсмены со всей России собрались, чтобы показать своё мастерство.
+              </p>
+            </div>
+            <div class="hidden sm:flex flex-col gap-4 bg-white/95 text-gray-800 rounded-xl shadow-lg p-6 w-[220px]">
+              <div class="flex items-center gap-2">
+                <img src="./icons/camera.svg" class="w-5 h-5" alt="">
+                <span class="text-sm font-medium">Веб-камеры</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./icons/map.svg" class="w-5 h-5" alt="">
+                <span class="text-sm font-medium">Карта трасс</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper pagination + arrows -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
     <!-- 2-showcase section end -->
 
     <!-- 3-Tubing section start -->
+    <section class="container1">
+    <div class="py-[30px]">
+        <h2 class="font-black text-2xl sm:text-3xl md:text-4xl leading-[1.3] text-[#0093dd]"> Центр активного отдыха "Евразия" </h2>
+    </div>
+
+    <div class="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden" 
+        data-aos="fade-up" data-aos-duration="1200">
+        <img src="./images/Tubing.svg" alt="fon" 
+            class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-y-0 left-0 w-3/4 sm:w-2/3 md:w-1/2 bg-blue-600/90 flex items-center"
+            style="clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);">
+        <div class="p-4 sm:p-6 md:p-8">
+            <p class="font-normal text-base sm:text-lg md:text-xl lg:text-2xl leading-[1.3] text-white">Мы рады приветствовать<br>любителей активного отдыха<br>  в нашем экологическом парке — <br> самом динамично развивающемся <br> горнолыжном центре Южного Урала!
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
     <!-- 3-Tubing section end -->
 
     <!-- 4-Promotions section start -->
+      <section class="container1">
+         <div class="flex items-center justify-between py-[40px] flex-col md:flex-row gap-4 " data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="font-black text-[40px] leading-[1.3] text-[#0093dd]">Акции и спец предложения</h2>
+            <button class="btn">Посмотреть все</button>
+        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] py-[10px]">
+    <div class="relative rounded-2xl overflow-hidden" data-aos="zoom-in"  data-aos-duration="1200">
+        <img src="./images/promotion1.svg" alt="poster1" class="w-full h-full object-cover" >
+        <div class="absolute inset-0 flex items-start p-4">
+        <h3 class="font-black text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.1] text-white p-[15px] sm:p-[20px] lg:p-[30px]">30 декабря <br>в ЦАО "Евразия" <br>состоится тестовое <br>открытие 2 склона.<br><span class="font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-[1.2] text-white">К новогодним праздникам уже<br> подготовлено <br>5 больших склонов и учебная трасса,<br>а также тюбинговая горка.</span></h3>
+        </div>
+    </div>
+    <div class="relative rounded-2xl overflow-hidden"  data-aos="zoom-in" data-aos-duration="1400">
+        <img src="./images/promotion1.svg" alt="poster2"  class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-start p-4">
+       <h3 class="font-black text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.1] text-white p-[15px] sm:p-[20px] lg:p-[30px]">30 декабря <br>в ЦАО "Евразия" <br>состоится тестовое <br>открытие 2 склона.<br><span class="font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-[1.2] text-white">К новогодним праздникам уже<br> подготовлено <br>5 больших склонов и учебная трасса,<br>а также тюбинговая горка.</span></h3>
+        </div>
+    </div>
+    </div>
+
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] pb-[30px] py-[40px]">
+    <div class="relative rounded-2xl overflow-hidden" data-aos="zoom-in"  data-aos-duration="1200">
+        <img src="./images/promotion2.svg" alt="poster1" class="w-full h-full object-cover" >
+        
+    </div>
+    <div class="relative rounded-2xl overflow-hidden"  data-aos="zoom-in" data-aos-duration="1400">
+        <img src="./images/promotion3.svg" alt="poster2"  class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-start p-4">
+       <h3 class="font-black text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.1] text-white p-[15px] sm:p-[20px] lg:p-[30px]">BBQ площадки.</h3>
+        </div>
+    </div>
+    </div>
+     </section>
     <!-- 4-Promotions section end -->
 
     <!-- 5-Poster section start -->
-     <section class="container1">
-        <div class="flex items-center justify-between py-[10px]">
+    <section class="container1">
+        <div class="flex items-center justify-between py-[10px] flex-col md:flex-row gap-4 " data-aos="fade-up" data-aos-duration="1000">
             <h2 class="font-black text-[40px] leading-[1.3] text-[#0093dd]">Афиша</h2>
             <button class="btn">Посмотреть все</button>
         </div>
-        <div class="flex items-center justify-between py-[10px] gap-[40px]">
-            <img src="./images/poster1.svg" alt="poster1" class="w-full ">
-            <img src="./images/poster2.svg" alt="poster2" class="w-full ">
+        <div class="flex items-center justify-between py-[30px] flex-col md:flex-row gap-[50px] py-[50px]">
+            <img  src="./images/poster1.svg"  alt="poster1" class="w-full md:w-1/2" data-aos="zoom-in" data-aos-duration="1200">
+            <img src="./images/poster2.svg" alt="poster2" class="w-full md:w-1/2" data-aos="zoom-in" data-aos-duration="1400">
         </div>
-     </section>
+    </section>
     <!-- 5-Poster section end -->
 
     <!-- 6-News section start -->
+     <section class="container1">
+         <div class="flex items-center justify-between py-[30px] flex-col md:flex-row gap-4 py-[50px]" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="font-black text-[40px] leading-[1.3] text-[#0093dd]">Новости</h2>
+            <button class="btn">Посмотреть все</button>
+        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="relative rounded-2xl overflow-hidden" data-aos="zoom-in"  data-aos-duration="1200">
+        <img src="./images/news1.svg" alt="poster1" class="w-full h-full object-cover" >
+        <div class="absolute inset-0 flex items-start p-4">
+        <p class="font-black text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.1] text-white p-[15px] sm:p-[20px] lg:p-[30px]">Состоялось первенство России по сноуборду <br> в дисциплине Big-Air</p>
+        </div>
+    </div>
+    <div class="relative rounded-2xl overflow-hidden"  data-aos="zoom-in" data-aos-duration="1400">
+        <img src="./images/news2.svg" alt="poster2"  class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-start p-4">
+        <p class="font-black text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.1] text-white p-[15px] sm:p-[20px] lg:p-[30px]"> Всероссийские соревнования по сноуборду <br>в городе Куса</p>
+        </div>
+    </div>
+    </div>
+        <div class="flex items-center justify-center py-[50px] gap-[15px]"   data-aos="zoom-in" data-aos-duration="1600">
+            <img src="./images/WK.svg" alt="news1" >
+            <img src="./images/You tobe.svg" alt="news2"  >
+            <img src="./images/news3.svg" alt="news3" >
+        </div>
+     </section>
     <!-- 6-News section end -->
 
     <!--7-Footer section start -->
     <!--7-Footer section end -->
+
+    <!-- AOS animationni ulash -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
